@@ -207,6 +207,12 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\7724415001S_Garrett.1.jpg" />
+    <Content Include="Content\img\7724415001S_Garrett_2.jpg" />
+    <Content Include="Content\img\7724415001S_Garrett_3.jpg" />
+    <Content Include="Content\img\7724415001S_Garrett_5.jpg" />
+    <Content Include="Content\img\garrettturbo_logo.jpg" />
+    <Content Include="Content\img\HON-Garrett-RGB.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
