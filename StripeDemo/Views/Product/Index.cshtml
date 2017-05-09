@@ -1,4 +1,4 @@
-﻿@model StripeDemo.Models.ProductViewModels
+﻿@model StripeDemo.Models.IndexViewModels
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -8,7 +8,7 @@
     <div class="row product-detail-2">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <div class="wrapper">
-                <div class="row">
+                <div class="row" style="margin-top: 20px">
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -48,12 +48,18 @@
                         </div>
                     </div>
                     <div class="col-lg-6 text-right">
-                       <!-- <button type="button" class="btn btn-lg btn-success btn-lg">Buy</button>-->
-                        <form action="" method="POST">
-                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                                    data-key="@Model.StripePublishableKey">
+                            @using (Html.BeginForm("Charge", "Product", FormMethod.Post))
+                            {
+                            @Html.AntiForgeryToken()
+                            <script src="https://checkout.stripe.com/checkout.js" 
+                                    class="stripe-button"
+                                    data-key="@Model.StripePublishableKey"
+                                    data-amount="114499"
+                                    data-name="Garret Turbo"
+                                    data-description='GT3788 Powerstroke Turbo'
+                                    data-image="/Content/img/7724415001S_Garrett.1.jpg">
                             </script>
-                        </form>
+                            }
                     </div>
                 </div>
             </div>

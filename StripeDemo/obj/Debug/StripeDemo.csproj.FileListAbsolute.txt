@@ -94,3 +94,4 @@ C:\VSProjects\StripeDemo\StripeDemo\bin\Microsoft.AI.Web.xml
 C:\VSProjects\StripeDemo\StripeDemo\obj\Debug\StripeDemo.csprojResolveAssemblyReference.cache
 C:\VSProjects\StripeDemo\StripeDemo\obj\Debug\StripeDemo.dll
 C:\VSProjects\StripeDemo\StripeDemo\obj\Debug\StripeDemo.pdb
+C:\VSProjects\StripeDemo\StripeDemo\bin\Stripe.net.dll
